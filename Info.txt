@@ -1,0 +1,22 @@
+仓库地址：https://github.com/zuiyanyu/gmall.git
+====================================
+当我们选择VCS->Import into Version Control->Share Project on GitHub提交代码。点击OK。
+然后就跳出了这样的信息
+Successfully created project 'gmall' on GitHub,
+远程git仓库已经创建成功了。
+
+but initial commit failed: unable to auto-detect email address
+ (got 'matengfei@DESKTOP-OTH1BDA.(none)')
+ 错误原因:没有配置
+      Run git config --global user.email "you@example.com"
+      git config --global user.name "  (全局)
+ 或者 git config user.email  和  git config user.name （局部）
+
+ 影响：没关系，提交项目的时候会再次提示让你填写
+ 如果非要解决：解决办法如下。
+ 1. 在你安装Git的目录下找到git-bash这个可执行文件
+ 2. 设置用户名和邮箱地址，如下图：
+
+ $ git config --global user.name "your name"
+ $ git config --global user.email "your_GitHub_email@youremail.com"
+ ====================================
